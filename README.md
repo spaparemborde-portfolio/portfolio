@@ -1,16 +1,13 @@
-# Portfolio — De l'idée à l'impact
+# De l'idée à l'impact — Portfolio V2
 
-Portfolio professionnel de Sandrine Paparemborde Maumy.
+Fichiers à déposer ensemble à la racine du dépôt GitHub :
 
-## Mise en ligne sur GitHub Pages
-
-Téléverser à la racine du dépôt :
 - index.html
-- le dossier css
-- le dossier js
-- le dossier images
-- le dossier documents
+- style.css
+- script.js
+- portrait-sandrine.png
+- README.md
 
-GitHub Pages doit être configuré sur :
+GitHub Pages :
 - branche : main
 - dossier : /(root)
