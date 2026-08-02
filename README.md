@@ -1,22 +1,18 @@
-# De l'idée à l'impact — V3 Étape 2
+# De l'idée à l'impact — V3 Étape 3
 
-## Fichiers à déposer à la racine du dépôt GitHub
-
+Fichiers à déposer à la racine :
 - index.html
-- style-v3-etape2.css
-- script-v3-etape2.js
+- style-v3-etape3.css
+- script-v3-etape3.js
 - portrait-sandrine.png
 - logo-france-travail.png
 - README.md
 
-## Évolutions
+Évolutions :
+- rubrique « Les preuves » entièrement refondue ;
+- lecture Besoin / Réponse / Impact ;
+- filtres Pilotage / Innovation / Mobilisation / Développement ;
+- mise en avant de la simulation immersive ;
+- dossiers plus faciles à présenter à l'oral.
 
-- conservation de la nouvelle couverture et de l'animation d'ouverture ;
-- parcours « Une manière d'agir » entièrement redessiné ;
-- apparition progressive des six étapes ;
-- mise en valeur centrale du pouvoir d'agir ;
-- barre de progression en haut de l'écran ;
-- indication plus claire pour consulter les preuves ;
-- fichiers CSS/JS à nouveau versionnés pour éviter le cache.
-
-Après le commit GitHub, attendre 2 minutes puis utiliser Ctrl + F5.
+Après le commit, attendre 2 minutes puis utiliser Ctrl + F5.
