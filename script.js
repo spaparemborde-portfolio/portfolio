@@ -11,3 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.12 });
   items.forEach((item) => observer.observe(item));
 });
+
+window.addEventListener("load",()=>{setTimeout(()=>document.body.classList.add("intro-done"),2800);});

@@ -478,3 +478,65 @@ blockquote:hover{
   .reading-key{grid-template-columns:1fr}
   .wheel::before{width:300px;height:300px}
 }
+
+
+/* ===== V3 Étape 1 : couverture, identité institutionnelle et animation ===== */
+body.intro-done .intro-screen{opacity:0;visibility:hidden;pointer-events:none}
+.intro-screen{
+  position:fixed;inset:0;z-index:999;display:grid;place-items:center;
+  background:#061d40;color:#fff;
+  transition:opacity .75s ease,visibility .75s ease
+}
+.intro-sequence{
+  display:flex;flex-direction:column;gap:8px;text-align:center;
+  font-size:clamp(1.4rem,3vw,2.3rem);font-weight:700
+}
+.intro-sequence span,.intro-sequence strong{
+  opacity:0;transform:translateY(14px);animation:introWord .55s forwards
+}
+.intro-sequence span:nth-child(1){animation-delay:.15s}
+.intro-sequence span:nth-child(2){animation-delay:.55s}
+.intro-sequence span:nth-child(3){animation-delay:.95s}
+.intro-sequence span:nth-child(4){animation-delay:1.35s}
+.intro-sequence strong{
+  animation-delay:1.8s;color:#7fe2de;
+  font-size:clamp(2.2rem,5vw,4rem);margin-top:12px
+}
+@keyframes introWord{to{opacity:1;transform:none}}
+
+.hero{min-height:800px}
+.institutional-mark{
+  display:flex;align-items:center;gap:14px;margin-bottom:24px;
+  padding:10px 13px;width:max-content;max-width:100%;
+  border-radius:16px;background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.16)
+}
+.institutional-mark img{
+  width:170px;max-height:48px;object-fit:contain;
+  background:#fff;border-radius:9px;padding:5px 8px
+}
+.institutional-mark span{
+  color:rgba(255,255,255,.82);font-size:.82rem;
+  font-weight:700;max-width:260px
+}
+.candidate-name{
+  margin:0 0 8px;color:#fff;
+  font-size:clamp(1.35rem,2vw,1.75rem);font-weight:850
+}
+.candidate-badge{
+  display:inline-flex;align-items:center;min-height:38px;
+  padding:0 15px;border-radius:999px;
+  background:#e7f6f5;color:#0b5f63;
+  font-weight:850;font-size:.9rem;
+  box-shadow:0 10px 24px rgba(0,0,0,.15)
+}
+.hero h1{margin-top:22px}
+.portrait{outline:1px solid rgba(255,255,255,.35);outline-offset:8px}
+.footer-brand{display:inline-flex;align-items:center;gap:10px}
+.footer-brand img{
+  width:120px;background:#fff;border-radius:7px;padding:3px 6px
+}
+@media(max-width:720px){
+  .institutional-mark{align-items:flex-start;flex-direction:column}
+  .institutional-mark span{max-width:100%}
+}
