@@ -1180,3 +1180,13 @@ body.intro-done .intro-screen{
   .domain-stats div{min-height:auto}
   .publics{grid-template-columns:1fr}
 }
+/* Correctif final témoignages — fonctions et repères visuels */
+.review-card{border-left:6px solid transparent}
+.review-ft{border-left-color:#5ca8ff}
+.review-partner{border-left-color:#55d6a4}
+.review-card footer{line-height:1.45}
+.review-card footer strong{color:#fff}
+.review-ft footer{color:#8fc5ff}
+.review-partner footer{color:#7ee0b5}
+.video-card.review-partner{border-left:6px solid #55d6a4}
+.video-role{margin:10px 0 16px!important;color:#2e7d63!important;line-height:1.45}
