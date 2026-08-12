@@ -1190,3 +1190,17 @@ body.intro-done .intro-screen{
 .review-partner footer{color:#7ee0b5}
 .video-card.review-partner{border-left:6px solid #55d6a4}
 .video-role{margin:10px 0 16px!important;color:#2e7d63!important;line-height:1.45}
+
+
+/* ===== Quand je crée autrement ===== */
+.creative-section{background:#f5f8fb}
+.creative-section h2{margin-bottom:10px}
+.creative-intro{max-width:780px;margin:0 0 30px;color:var(--muted);font-size:1.08rem}
+.creative-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.creative-card{margin:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 14px 34px rgba(7,31,68,.10);border:1px solid rgba(7,31,68,.08)}
+.creative-card img{display:block;width:100%;height:290px;object-fit:cover}
+.creative-card figcaption{padding:16px 17px 18px;display:flex;flex-direction:column;gap:4px}
+.creative-card figcaption strong{color:var(--blue);font-size:1rem}
+.creative-card figcaption span{color:var(--muted);font-size:.9rem}
+@media(max-width:980px){.creative-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.creative-grid{grid-template-columns:1fr}.creative-card img{height:330px}.creative-intro{font-size:1rem}}
