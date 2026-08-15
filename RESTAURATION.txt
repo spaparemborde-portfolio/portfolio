@@ -1,0 +1,3 @@
+Portfolio vertical V5.1 restauré depuis les fichiers précédemment conservés.
+Dépôt GitHub cible : spaparemborde-portfolio/portfolio
+Ne pas installer dans portfolio-management.

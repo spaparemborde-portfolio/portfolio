@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.01, rootMargin: "0px 0px -5% 0px" });
+  }, { threshold: 0.12 });
 
   revealItems.forEach((item) => observer.observe(item));
 
@@ -106,12 +106,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.45 });
 
   counters.forEach((counter) => counterObserver.observe(counter));
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.matchMedia("(max-width: 940px)").matches) {
-    document.querySelectorAll(".reveal").forEach((item) => {
-      item.classList.add("visible");
-    });
-  }
 });
