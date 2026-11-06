@@ -1,0 +1,45 @@
+/* ===== Section Immersions managériales ===== */
+.immersions-section{
+  background:linear-gradient(180deg,#f6f8fb 0%,#eef3f7 100%);
+}
+.immersion-timeline{
+  display:grid;
+  grid-template-columns:1fr 70px 1fr;
+  gap:18px;
+  align-items:stretch;
+  margin-top:38px;
+}
+.immersion-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:var(--shadow);
+  border-top:5px solid var(--teal);
+}
+.immersion-card--large{border-top-color:var(--blue)}
+.immersion-head{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:6px}
+.immersion-place{font-size:1.25rem;font-weight:900;color:var(--navy)}
+.immersion-duration{background:#e9f5f4;color:#087c81;padding:5px 10px;border-radius:999px;font-weight:850;font-size:.82rem;white-space:nowrap}
+.immersion-context{color:var(--muted);font-size:.9rem;margin:0 0 18px}
+.immersion-card h3{color:var(--navy);font-size:1.38rem;margin:0 0 12px}
+.immersion-card p{color:var(--muted)}
+.immersion-tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.immersion-tags span{padding:6px 10px;border-radius:999px;background:#f3f7fb;border:1px solid #d7e4ee;color:var(--blue);font-size:.8rem;font-weight:800}
+.immersion-lesson{border-left:4px solid var(--teal);padding:12px 14px;background:#f5fbfa;border-radius:9px;color:var(--navy)!important;margin-bottom:0}
+.immersion-link{display:grid;place-items:center}
+.immersion-link span{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;font-size:1.7rem;font-weight:900;box-shadow:0 12px 25px rgba(7,31,69,.16)}
+.immersion-wide-view{display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center;margin-top:22px;padding:22px 26px;background:#fff;border:1px solid var(--line);border-radius:20px}
+.wide-label{font-weight:900;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}
+.immersion-wide-view strong{color:var(--navy)}
+.immersion-wide-view p{margin:4px 0 0;color:var(--muted)}
+.immersion-synthesis{max-width:900px;margin:28px auto 0;text-align:center;color:var(--navy);font-size:1.08rem}
+@media(max-width:900px){
+  .immersion-timeline{grid-template-columns:1fr}
+  .immersion-link{height:34px}
+  .immersion-link span{transform:rotate(90deg);width:44px;height:44px}
+}
+@media(max-width:620px){
+  .immersion-wide-view{grid-template-columns:1fr;gap:8px}
+  .immersion-head{align-items:flex-start;flex-direction:column}
+}
