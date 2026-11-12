@@ -1,16 +1,28 @@
-# De l'idée à l'impact — V5.1
+# De l'idée à l'impact — V3 Étape 4.1
 
-## Modification réalisée
-- rubrique « Ils en parlent » conservée dans sa structure générale ;
-- fonctions complètes ajoutées ;
-- témoignages France Travail signalés par un liseré bleu ;
-- témoignages du Lycée Aristide Maillol signalés par un liseré vert ;
-- extraits existants conservés ;
-- carte Marie Boucher harmonisée avec les autres témoignages ;
-- aucune photo de tiers utilisée ;
-- aucun lien vers les témoignages écrits ajouté ;
-- aucune autre rubrique modifiée.
+## Fichiers à déposer à la racine du dépôt GitHub
 
-## Installation GitHub
-Déposez tous les fichiers à la racine du dépôt et confirmez leur remplacement.
-Attendez environ deux minutes, puis utilisez Ctrl + F5 sur le site.
+- index.html
+- style-v3-etape4-1.css
+- script-v3-etape4-1.js
+- portrait-sandrine.png
+- logo-france-travail.png
+- README.md
+
+## Modifications
+
+- résultats regroupés en cinq grands domaines ;
+- bloc Avenir Pro ;
+- bloc CEJ / Padlet ;
+- bloc Simulation d’entretien ;
+- bloc FTAE après six mois ;
+- bloc Conception d’outils et publics concernés ;
+- chiffres mieux contextualisés et plus faciles à présenter à l’oral.
+
+Après le commit GitHub, attendre 2 minutes puis utiliser Ctrl + F5.
+
+
+## Mise à jour novembre 2026
+- Ajout de la section « Immersions managériales » (Prades + Montpellier Méditerranée).
+- Réorganisation des preuves pour faire apparaître en premier les réalisations les plus directement liées au management.
+- Navigation et numérotation mises à jour.
