@@ -1200,3 +1200,62 @@ body.intro-done .intro-screen{
 .immersion-perspective{margin-top:18px;padding:22px 24px;border-left:4px solid #159fa3;background:#f5efe5;border-radius:0 14px 14px 0;}
 .immersion-perspective p{margin:8px 0 0;color:#172033;line-height:1.6;}
 @media(max-width:820px){.immersion-grid{grid-template-columns:1fr}.immersion-points>div{grid-template-columns:1fr}.immersion-card-head{align-items:flex-start;flex-direction:column}.immersions-section{padding:64px 0}}
+
+/* ===== Correctifs mobile novembre 2026 ===== */
+.impact-context{
+  position:relative;
+  z-index:1;
+  margin:18px 0 0;
+  padding-top:14px;
+  border-top:1px solid rgba(7,31,69,.10);
+  color:#536171;
+  font-size:.9rem;
+  line-height:1.5;
+}
+.mobile-swipe-hint{display:none}
+
+@media(max-width:760px){
+  /* Sur mobile, les preuves deviennent un carrousel horizontal :
+     on évite plusieurs écrans de défilement vertical avant les résultats. */
+  .proof-section .proof-toolbar{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:4px;
+    scrollbar-width:none;
+  }
+  .proof-section .proof-toolbar::-webkit-scrollbar{display:none}
+  .proof-section .proof-filter{flex:0 0 auto}
+  .mobile-swipe-hint{
+    display:block;
+    margin:18px 0 8px;
+    color:#0b6569;
+    font-size:.84rem;
+    font-weight:800;
+  }
+  .proof-section .folder-grid.proof-cards{
+    display:flex !important;
+    grid-template-columns:none !important;
+    gap:14px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    scroll-padding-left:2px;
+    -webkit-overflow-scrolling:touch;
+    padding:4px 2px 16px;
+    margin-top:8px;
+    scrollbar-width:thin;
+  }
+  .proof-section .proof-card{
+    flex:0 0 min(86vw,360px);
+    width:min(86vw,360px);
+    scroll-snap-align:start;
+  }
+  .proof-section .proof-card.is-hidden{display:none !important}
+  .proof-section .project-flow{grid-template-columns:1fr}
+  .proof-section .project-flow div{min-height:auto}
+
+  /* Resserrement doux entre sections sur petit écran. */
+  .proof-section{padding-bottom:58px}
+  .results-section{padding-top:58px}
+}
